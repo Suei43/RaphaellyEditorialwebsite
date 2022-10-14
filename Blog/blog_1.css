@@ -18,8 +18,9 @@ body{
     box-sizing: border-box;
     background-image: url(../img/blog-bg.jpg);
     background-position: center;
-    background-color: rgba(0, 0, 0, 0.01);
+    background-color: rgba(0, 0, 0, 0.02);
     background-blend-mode: darken;
+    position: relative;
 }
 .nav{
     width: 100vw;
@@ -681,5 +682,24 @@ footer{
     }
     .blog-box-div{
         margin-top: 7.5px;
+    }
+}
+/* .extra{
+    width: 500px;
+    height: 500px;
+    background-color: orange;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+@media (min-height:1170px) {
+    body{
+        height: 100vh;
+    }
+    footer{
+        position: absolute;
+        bottom: 0;
+        height: 22.5vh;
     }
 }

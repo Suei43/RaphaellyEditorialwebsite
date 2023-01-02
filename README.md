@@ -1,3 +1,4 @@
 # website
-An editorial Website
-Plain html, css and javascript.
+An editorial website for raphaelly editorials.
+Html, css and javascript.
+UI/UX credit @sueii__ twitter

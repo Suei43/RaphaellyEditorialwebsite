@@ -13,7 +13,7 @@ body{
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 20px;
-    background-color: white;
+    background-color: rgb(248, 248, 248, .9);
     overflow-x: hidden;
 }
 .section-1{
@@ -85,24 +85,25 @@ body{
 }
 @keyframes ani-in{
     100%{
-        width: 100%;
+        width: 94%;
     }
 }
 #nav ul li a:hover{
-    animation: animate-box 800ms ease-in;
+    animation: animate-nav-color 500ms ease-in;
     animation-fill-mode: forwards;
 }
 #nav ul li a:hover::after{
     animation: aniafter 500ms ease-out;
+    animation-fill-mode: forwards;
 }
 @keyframes aniafter{
-    100%{
+    to{
         width: 0%;
     }
 }
-@keyframes animate-box{
+@keyframes animate-nav-color{
     to{
-        background: rgb(214, 29, 29);
+        color: rgb(214, 29, 29);
     }
 }
 .main-text{
@@ -110,15 +111,23 @@ body{
     height: calc(100%-100px);
     display: flex;
     align-items: center;
-    font-size: 72px;
-    font-weight: 800;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    line-height: 110px;
     flex-wrap: wrap;
     box-sizing: border-box;
 }
 .wrapper, .wrapper1, .wrapper2{
     display: flex;
+}
+.information{
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    color: white;
+    padding: 40px 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    left: 6%;
+    width: 70%;
+    line-height: 1.5em;
+    word-spacing: .8em;
 }
 .main-text .span-1{
     position: relative;
@@ -128,7 +137,11 @@ body{
     display: flex;
     flex: 1;
     flex-wrap: wrap;
-    top: -7.5%;
+    top: 15%;
+    font-size: 72px;
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 110px;
 }
 .main-text .span-1::after{
     content: '';
@@ -194,47 +207,47 @@ body{
 }
 .main-text .span-1 .editorial:nth-child(1){
     color: transparent;
-    animation: txt-appearred 1.65s ease;
+    animation: txt-appear 1.65s ease;
     animation-fill-mode: forwards;
 }
 .main-text .span-1 .editorial:nth-child(2){
     color: transparent;
-    animation: txt-appearred 1.8s ease;
+    animation: txt-appear 1.8s ease;
     animation-fill-mode: forwards;
 }
 .main-text .span-1 .editorial:nth-child(3){
     color: transparent;
-    animation: txt-appearred 1.95s ease;
+    animation: txt-appear 1.95s ease;
     animation-fill-mode: forwards;
 }
 .main-text .span-1 .editorial:nth-child(4){
     color: transparent;
-    animation: txt-appearred 2.1s ease;
+    animation: txt-appear 2.1s ease;
     animation-fill-mode: forwards;
 }
 .main-text .span-1 .editorial:nth-child(5){
     color: transparent;
-    animation: txt-appearred 2.25s ease;
+    animation: txt-appear 2.25s ease;
     animation-fill-mode: forwards;
 }
 .main-text .span-1 .editorial:nth-child(6){
     color: transparent;
-    animation: txt-appearred 2.4s ease;
+    animation: txt-appear 2.4s ease;
     animation-fill-mode: forwards;
 }
 .main-text .span-1 .editorial:nth-child(7){
     color: transparent;
-    animation: txt-appearred 2.55s ease;
+    animation: txt-appear 2.55s ease;
     animation-fill-mode: forwards;
 }
 .main-text .span-1 .editorial:nth-child(8){
     color: transparent;
-    animation: txt-appearred 2.7s ease;
+    animation: txt-appear 2.7s ease;
     animation-fill-mode: forwards;
 }
 .main-text .span-1 .editorial:nth-child(9){
     color: transparent;
-    animation: txt-appearred 2.85s ease;
+    animation: txt-appear 2.85s ease;
     margin-right: 20px;
     animation-fill-mode: forwards;
 }
@@ -286,15 +299,6 @@ body{
 
     100%{
         color: white;
-    }
-}
-@keyframes txt-appearred{
-    0%,99%{
-        color: transparent;
-    }
-
-    100%{
-        color: rgb(214, 29, 29);
     }
 }
 #instamail{
@@ -403,12 +407,12 @@ body{
         height: 40px;
         background: transparent;
         position: absolute;
-        right: 10px;
+        right: 18px;
         z-index: 1001;
     }
     .line{
         position: relative;
-        width: 20px;
+        width: 23px;
         height: 3.5px;
         background-color: black;
         top: 50%;
@@ -420,7 +424,7 @@ body{
     }
     #hamburger .line::before{
         content: '';
-        width: 30px;
+        width: 33px;
         height: 4px;
         display: block;
         background-color: black;
@@ -466,7 +470,7 @@ body{
         animation-fill-mode: forwards;
         position: fixed;
         height: 100%;
-        background-color: rgba(30, 30, 30, 0.95);
+        background-color: rgba(30, 30, 30, 0.94);
         box-sizing: border-box;
         z-index: 900;
         right: 0;
@@ -491,16 +495,17 @@ body{
     }
     #navrespond ul li{
         width: 100%;
-        padding: 5%;
+        padding: 5% 12.5%;
         margin-block: 5%;
     }
     #navrespond ul li a{
         text-decoration: none;
         color: white;
         font-family: 'Open Sans', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 17px;
-        font-weight: 800;
+        font-size: 18px;
+        font-weight: 700;
         letter-spacing: 1.1px;
+        text-transform: uppercase;
         width: 100%;
         height: 100%;
     }
@@ -532,7 +537,7 @@ body{
     width: 100vw;
     padding-top: 15px;
     box-sizing: border-box;
-    background-color: #fffdfa;
+    background-color: transparent;
     position: relative;
     display: flex;
     flex: 1;
@@ -557,6 +562,15 @@ body{
     margin-left: 20px;
     font-weight: 900;
     word-spacing: 12.5px;
+}
+.standardh1{
+    font-size: 40px;
+    font-family: 'Carrois Gothic SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px 10px 20px 10px;
+    margin-left: 60px;
+    font-weight: 900;
+    word-spacing: 12.5px;
+    margin-top: 50px;
 }
 .aboutmetextarea p{
     padding: 10px 10px 20px 10px;
@@ -666,7 +680,7 @@ body{
     box-sizing: border-box;
 }
 .progintro{
-    margin: 50px 0 0 40px;
+    margin: 30px 0 0 20px;
     width: 85%;
     height: 30%;
     padding: 10px;
@@ -692,7 +706,7 @@ body{
 .progintro p{
     font-size: 18px;
     color: black;
-    padding: 20px 0 20px 4%;
+    padding: 20px 0 20px 2.4%;
     word-spacing: 2px;
     letter-spacing: 1px;
 }
@@ -711,8 +725,9 @@ body{
 .pastwork .flex{
     width: 300px;
     height: 170px;
-    padding: 18px 0 30px;
-    background-color: transparent;
+    border-radius: 20px;
+    padding: 18px 10px 30px;
+    background-color: white;
 }
 .pastwork .flex::after{
     content: '';
@@ -903,7 +918,7 @@ body{
     .contactpg .copyright{
         font-size: 14px;
         position: absolute;
-        bottom: -40px;
+        bottom: -25px;
     }
     .coontact{
         padding: 5px 10px;
@@ -922,18 +937,21 @@ body{
 
 .blog-div{
     width: 96%;
-    margin: 60px 2% 20px;
+    margin: 30px 2% 20px;
     height: 475px;
-    background-color: transparent;
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 24%;
     gap: 1%;
+    position: relative;
+    background-color: transparent;
 }
 .blog-box{
     width: 100%;
-    height: 90%;
-    background-color: transparent;
+    position: relative;
+    height: 450px;
+    margin-block: auto;
+    background-color: white;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -941,7 +959,8 @@ body{
     cursor: pointer;
     z-index: 500;
     transform: translateZ(200px);
-    position: relative;
+    border-radius: 30px;
+    box-shadow: 0px 0px 1px grey;
 }
 .blog-box-div{
     padding: 10px;
@@ -954,6 +973,7 @@ body{
 .blog-box img{
     width: 100%;
     height: 58%;
+    border-radius: 30px;
 }
 .title{
     color: rgb(214, 29, 29);
@@ -1003,6 +1023,7 @@ body{
     transition: 0.5s ease-in;
     cursor: pointer;
     z-index: 200;
+    border-radius: 30px;
 }
 .layer:hover{
     background-color: rgba(214, 29, 29,0.7);
@@ -1080,7 +1101,7 @@ body{
     }
     .blog-box{
         scroll-snap-align: start;
-        height: 94%;
+        /* height: 94%; */
         box-shadow: 0 0 1px #BFACE0;
     }
     .blog-box img{
@@ -1123,4 +1144,12 @@ body{
 }
 .blog-div a:active{
     text-decoration: none;
+}
+@media(max-width:640px){
+    .information{
+        display: none;
+    }
+    .main-text .span-1{
+        top: -3%;
+    }
 }

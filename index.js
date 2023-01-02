@@ -11,6 +11,7 @@ const html = document.documentElement
 const mail = document.getElementById('instamail')
 const line = document.querySelector('.line')
 
+let menuOpen;
 function openMenu(){
     menuIcons.classList.add('animatee')
     html.addEventListener('click', closeMenuOnBodyClick)

@@ -1,12 +1,12 @@
 const contact = document.querySelector('.contactus')
 const readMore = document.querySelector('.read-more')
-const readLess = document.querySelector('.read-less')
 const Read = document.querySelector('.continue-read')
 const hamburger = document.querySelector("#hamburger")
 const menuIcons = document.querySelector(".menuicons")
 const navRespond = document.querySelector("#navrespond")
 const html = document.documentElement
 const line = document.querySelector('.line')
+const hideFirst = document.querySelectorAll(".hide-first")
 
 function openMenu(){
     menuIcons.classList.add('animatee')
@@ -37,11 +37,14 @@ document.querySelectorAll(".main-text").forEach(n =>n.addEventListener("click",
 
 readMore.addEventListener("click", ()=>{
     Read.style.display="block"
+    readMore.classList.add("button-clicked")
     readMore.style.display="none"
-    readLess.style.display="flex"
+    hideFirst.forEach((member)=>{
+        member.classList.add("active")
+    })
 })
-readLess.addEventListener("click", ()=>{
-    Read.style.display="none"
-    readMore.style.display="flex"
-    readLess.style.display="none"
-})
+if(window.innerWidth<=550){
+    hideFirst.forEach((member)=>{
+        member.classList.add("active")
+    })
+}   

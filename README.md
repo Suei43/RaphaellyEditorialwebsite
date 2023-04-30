@@ -1,5 +1,5 @@
 <h1>Raphaelly Editorial Website</h1>
-<p>This is an editorial website built using HTML, CSS, and JavaScript. The purpose of this website is to provide a platform for users to read and share editorial content on various topics.</p>
+<p>This is the website for an editorial service company built using HTML, CSS, and JavaScript. The purpose of this website is to showcase the services offered by the company and provide a platform for potential clients to contact the company..</p>
 
 <h2>Getting Started</h2>
 To view the website, simply open the <b>index.html</b> file in a web browser.

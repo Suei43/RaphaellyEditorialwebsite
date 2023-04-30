@@ -31,5 +31,6 @@ To view the website, simply open the <b>index.html</b> file in a web browser.
 <li>Create a new branch for your feature.</li>
 <li>Make your changes and commit them to the new branch.</li>
 <li>Submit a pull request.</li>
+</ol>
 <h2>License</h2>
   This project is licensed under the <a href="https://opensource.org/license/mit/">MIT License.</a>

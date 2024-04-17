@@ -275,7 +275,7 @@ body {
   position: relative;
 }
 .blogtitle {
-  font-weight: 800;
+  font-weight: 600;
   margin: auto;
 }
 .blogtitle::after {
@@ -288,7 +288,7 @@ body {
 .blogtopic {
   margin: 10px 0;
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 600;
 }
 .date {
   position: absolute;

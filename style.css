@@ -15,6 +15,18 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
+/* font sizes */
+.font-sm {
+  font-size: 1rem;
+}
+.font-md {
+  font-size: 2.5rem;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  word-spacing: 12.5px;
+}
 
 a {
   text-decoration: none !important;
@@ -53,11 +65,10 @@ a {
   gap: 1em;
 }
 #nav ul li {
-  font-weight: 600;
   display: flex;
   justify-content: center;
   align-items: center;
-  letter-spacing: 2px;
+  font-weight: 500;
 }
 #nav ul li a {
   color: white;
@@ -310,7 +321,6 @@ a {
   color: white;
   border: none;
   text-align: center;
-  font-weight: 900;
 }
 @media (min-width: 550px) {
   #instamail:hover {
@@ -360,11 +370,6 @@ a {
   }
   #nav ul li {
     display: none;
-  }
-  .raphaelly,
-  .editorial,
-  .services {
-    font-size: 50px;
   }
   .hero-main .span-1 {
     width: 80%;
@@ -441,7 +446,6 @@ a {
     justify-content: center;
     position: absolute;
     padding-top: 75px;
-    box-sizing: border-box;
     opacity: 0;
   }
   #navrespond.active {
@@ -453,7 +457,6 @@ a {
     position: fixed;
     height: 100%;
     background-color: rgba(30, 30, 30, 0.94);
-    box-sizing: border-box;
     z-index: 900;
     right: 0;
   }
@@ -483,8 +486,6 @@ a {
   #navrespond ul li a {
     font-family: "Open Sans", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     color: white;
-    font-weight: 700;
-    letter-spacing: 1.1px;
     text-transform: uppercase;
     width: 100%;
     height: 100%;
@@ -501,7 +502,6 @@ a {
     height: 100%;
   }
   .icon i {
-    font-size: 17px;
     color: white;
   }
   .section-2 {
@@ -514,7 +514,6 @@ a {
 .section2 {
   width: 100vw;
   padding-top: 15px;
-  box-sizing: border-box;
   background-color: transparent;
   position: relative;
   display: flex;
@@ -533,29 +532,22 @@ a {
   width: 70%;
 }
 .aboutmetextarea h1 {
-  font-size: 40px;
   font-family: "Carrois Gothic SC", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   padding: 10px 10px 20px 10px;
   margin-left: 20px;
-  font-weight: 900;
-  word-spacing: 12.5px;
 }
 .aboutmetextarea p {
   padding: 10px;
   line-height: 30px;
   text-align: justify;
-  letter-spacing: 0.5px;
 }
 .section-5 {
   margin-block: 100px;
 }
 .standardh1 {
-  font-size: 40px;
   font-family: "Carrois Gothic SC", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   padding: 10px 10px 20px 10px;
   margin-left: 60px;
-  font-weight: 900;
-  word-spacing: 12.5px;
 }
 .section2 .knowmore {
   margin: 20px 0 0 10px;
@@ -567,7 +559,6 @@ a {
   color: white;
   justify-content: flex-start;
   background: rgb(214, 29, 29);
-  box-sizing: border-box;
 }
 .medeco {
   color: rgb(214, 29, 29);
@@ -575,30 +566,25 @@ a {
 .servicess {
   width: 100%;
   word-spacing: 5px;
-  background: url(img/about.jpg);
-  background-color: rgba(0, 0, 0, 0.8);
-  background-blend-mode: darken;
-  background-position: center;
-  background-size: cover;
-  padding-left: 40px;
-  padding-block: 120px;
-  color: white;
-  box-sizing: border-box;
+  padding-block: 70px;
+  display: flex;
+  flex-direction: row;
+  gap: 5em;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 4em;
+}
+.servicess > img {
+  height: min-content;
+  max-width: 500px;
 }
 .servicess h1 {
-  font-size: 40px;
   font-family: "Carrois Gothic SC", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  letter-spacing: 1.2px;
   padding: 0 0 10px 10px;
-  margin-left: 40px;
-  color: red;
   margin-bottom: 10px;
 }
 .servicess .p {
-  padding: 10px;
-  padding-left: 20px;
-  line-height: 21px;
-  letter-spacing: 0.6px;
+  line-height: 1.5em;
 }
 .servicess ul {
   list-style: inside;
@@ -608,12 +594,9 @@ a {
   line-height: 35px;
   font-weight: 600;
   font-style: italic;
-  letter-spacing: 2px;
 }
 .servicesfooter {
-  padding: 40px 0 0 20px;
-  line-height: 21px;
-  letter-spacing: 0.6px;
+  line-height: 1.5em;
 }
 @media (max-width: 550px) {
   .servicess {
@@ -638,7 +621,6 @@ a {
 
 .section-2 {
   max-width: 100vw;
-  box-sizing: border-box;
 }
 .progintro {
   width: 85%;
@@ -649,13 +631,8 @@ a {
   width: 100%;
   text-align: left;
   color: black;
-  font-size: 40px;
   font-family: "Carrois Gothic SC", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  letter-spacing: 1.2px;
-  font-weight: 900;
   margin-left: 4%;
-  word-spacing: 0.2em;
-  box-sizing: border-box;
 }
 .red {
   color: rgb(214, 29, 29);
@@ -674,7 +651,6 @@ a {
   flex-wrap: wrap;
   gap: 20px;
   padding: 10px;
-  box-sizing: border-box;
   min-height: 250px;
 }
 .pastwork .flex {
@@ -698,7 +674,6 @@ a {
   margin-bottom: 10px;
   margin-left: 10px;
   height: 80%;
-  box-sizing: border-box;
   line-height: 1.3em;
 }
 .pastwork .flex p {
@@ -706,7 +681,6 @@ a {
   font-style: italic;
   color: rgb(214, 29, 29);
   padding: 0 10px 20px 0;
-  font-weight: 900;
 }
 @media (max-width: 800px) {
   .pastwork {
@@ -728,7 +702,6 @@ a {
   }
   .progintro h1 {
     margin-left: 20px;
-    font-size: 45px;
   }
   .progintro p {
     padding: 5px 0 10px 20px;
@@ -754,12 +727,8 @@ a {
 }
 .contactpg h1 {
   width: 100%;
-  font-size: 40px;
   font-family: "Carrois Gothic SC", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  letter-spacing: 1.1px;
-  word-spacing: 1rem;
   padding: 30px;
-  box-sizing: border-box;
   text-align: center;
 }
 .contactuscontent {
@@ -796,7 +765,6 @@ a {
   margin: 10px 0;
   font-weight: 700;
   text-align: center;
-  letter-spacing: 1.05px;
 }
 .coontact .textone,
 .coontact .texttwo {
@@ -888,7 +856,6 @@ a {
 }
 .blog-box-div {
   padding: 10px;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -902,7 +869,6 @@ a {
 .title {
   color: rgb(214, 29, 29);
   padding: 5px;
-  font-weight: 500;
   font-style: italic;
 }
 .blog-box .topic {
@@ -910,7 +876,6 @@ a {
   font-weight: 900;
   color: rgb(50, 50, 50);
   padding: 10px;
-  box-sizing: border-box;
   width: 100%;
   text-align: justify;
 }
@@ -933,7 +898,6 @@ a {
   text-align: right;
   color: rgb(70, 70, 70);
   font-weight: 600;
-  box-sizing: border-box;
 }
 .layer {
   background: transparent;
@@ -963,7 +927,6 @@ a {
   position: absolute;
   transition: 0.5s;
   text-align: center;
-  box-sizing: border-box;
 }
 .layer:hover h3 {
   bottom: 50%;
@@ -1042,6 +1005,14 @@ a {
   }
 }
 @media (max-width: 960px) {
+  .servicess {
+    flex-direction: column;
+    gap: 3em;
+    padding-inline: 2em;
+  }
+  .services > img {
+    width: 400px;
+  }
   .contactpg {
     height: fit-content;
   }

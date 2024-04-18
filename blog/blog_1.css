@@ -22,15 +22,15 @@ body {
   background-blend-mode: darken;
   position: relative;
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 .nav {
   width: 100vw;
-  min-height: 90px;
+  min-height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
-  position: relative;
 }
 .head {
   width: 40%;
@@ -42,7 +42,7 @@ body {
 .head a {
   text-decoration: none;
   color: rgb(214, 29, 29);
-  font-weight: 600;
+  font-weight: 400;
   font-family: "Pacifico", sans-serif;
 }
 .head a:hover {
@@ -56,11 +56,11 @@ body {
   }
 }
 .nav ul {
-  width: 55%;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  gap: 4em;
+  padding-inline: 5em;
   list-style-type: none;
   box-sizing: border-box;
 }
@@ -79,7 +79,6 @@ body {
   text-decoration: none;
   color: rgb(214, 29, 29);
   font-weight: 600;
-  font-size: 18px;
 }
 .nav ul li a:hover {
   animation: animate-box 200ms linear;
@@ -97,8 +96,8 @@ body {
   margin: auto;
   width: fit-content;
   text-align: center;
-  font-size: 16px;
   font-weight: 800;
+  font-size: 14px;
 }
 .topicoftopic::after {
   content: "";
@@ -120,7 +119,6 @@ body {
   margin: 20px auto;
 }
 .passage {
-  font-weight: 500;
   text-align: right;
 }
 .intro {
@@ -170,7 +168,6 @@ body {
   font-weight: 600;
 }
 .box .par {
-  font-size: 16px;
   word-spacing: 4px;
   line-height: 25px;
   margin-bottom: 10px;
@@ -287,12 +284,11 @@ body {
 }
 .blogtopic {
   margin: 10px 0;
-  font-size: 18px;
   font-weight: 600;
 }
 .date {
   position: absolute;
-  bottom: 5%;
+  bottom: 3%;
   right: 0;
   margin: auto 0;
   width: 100%;
@@ -300,6 +296,7 @@ body {
   font-style: italic;
   color: rgb(140, 140, 140);
   font-weight: 600;
+  font-size: 14px;
 }
 .flextitle {
   font-weight: 600;
@@ -367,11 +364,9 @@ footer {
   bottom: 4%;
   right: 50%;
   transform: translateX(50%);
-  font-weight: 500;
   font-family: "Open Sans", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   text-transform: uppercase;
   color: white;
-  font-size: 16px;
 }
 .coontact {
   width: 300px;
@@ -391,7 +386,6 @@ footer {
   padding: 5px;
   text-align: center;
   line-height: 15px;
-  font-size: 16px;
   color: white;
 }
 .sunraph4 {
@@ -446,10 +440,6 @@ footer {
   }
 }
 @media (max-width: 700px) {
-  .coontact .textone,
-  .coontact .texttwo {
-    font-size: 15px;
-  }
   .box h2 {
     font-size: 18px;
   }
@@ -578,9 +568,7 @@ footer {
   #navrespond ul li a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 1.1px;
+    font-weight: 600;
     text-transform: uppercase;
     width: 100%;
     height: 100%;

@@ -6,38 +6,49 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  cursor: default;
+  width: 100vw;
+  background-image: url(../img/blog-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-blend-mode: darken;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 .hamburga,
 .menuicons {
   display: none;
 }
-body {
-  cursor: default;
-  overflow-x: hidden;
-  width: 100vw;
-  box-sizing: border-box;
-  background-image: url(../img/blog-bg.jpg);
-  background-position: center;
-  background-color: rgba(0, 0, 0, 0.1);
-  background-blend-mode: darken;
-  position: relative;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+.no-select {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.no-select:focus {
+  outline: none !important;
 }
 .nav {
-  width: 100vw;
-  min-height: 100px;
+  position: relative;
+  width: 100%;
+  min-height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-sizing: border-box;
+  background-color: transparent;
 }
 .head {
   width: 40%;
   text-align: center;
   font-size: 30px;
   padding: 10px 0;
-  box-sizing: border-box;
 }
 .head a {
   text-decoration: none;
@@ -344,10 +355,11 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background: transparent;
 }
 footer {
   width: 100vw;
-  background-color: rgba(50, 50, 50);
+  background-color: #2c3539;
   position: relative;
   bottom: 0;
   box-sizing: border-box;
@@ -373,21 +385,20 @@ footer {
   padding: 0 10px;
   height: 170px;
   box-sizing: border-box;
+  color: white;
 }
 .coontact .topic {
-  color: white;
   font-size: 25px;
   margin: 10px 0 20px;
   font-weight: 700;
   text-align: center;
 }
-.coontact .textone,
-.coontact .texttwo {
-  padding: 5px;
+.coontact > p {
+  padding: 10px;
   text-align: center;
-  line-height: 15px;
-  color: white;
+  line-height: 0.8em;
 }
+
 .sunraph4 {
   word-break: break-word;
   text-align: center;
@@ -403,6 +414,7 @@ footer {
   text-decoration: underline;
 }
 .useful h1 {
+  font-family: "Pacifico", sans-serif;
   margin: 10px;
   color: white;
   font-weight: 700;
@@ -451,68 +463,39 @@ footer {
     top: 2%;
     left: 1.5%;
     width: 80%;
+    font-size: 27px;
   }
   .contactus {
     left: 4%;
     width: 5%;
   }
   .hamburga {
-    width: 100%;
-    height: 58px;
-    display: block;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
-    top: 1.5%;
-    left: 0;
+    top: 2%;
+    right: 1%;
     z-index: 1000;
+    margin-inline: 1em;
   }
   #hamburger {
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    position: absolute;
-    right: 18px;
-    z-index: 1001;
-  }
-  .line {
-    position: relative;
-    width: 23px;
-    height: 3.5px;
-    background-color: black;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .line.active {
-    background-color: transparent;
-  }
-  #hamburger .line::before {
-    content: "";
-    width: 33px;
-    height: 4px;
+    width: 35px;
+    height: 35px;
     display: block;
-    background-color: black;
-    transform: translateY(-12px);
   }
-  #hamburger .line::after {
-    content: "";
-    width: 33px;
-    height: 4px;
+  #cancel {
+    width: 30px;
+    height: 30px;
+    display: none;
+  }
+  #hamburger.disabled {
+    display: none;
+  }
+  #cancel.active {
     display: block;
-    background-color: black;
-    transform: translateY(7px);
-  }
-  #hamburger.active ::before {
-    transform-origin: center;
-    transform: translate(3.5px, 7.5px) rotate(47.5deg);
-    background-color: white;
-  }
-  #hamburger.active ::after {
-    transform-origin: center;
-    transform: translate(3px, 3.5px) rotate(-47.5deg);
-    background-color: white;
-  }
-  .line.active {
-    background-color: transparent;
   }
   .menuicons {
     display: block;
@@ -563,12 +546,11 @@ footer {
   #navrespond ul li {
     width: 100%;
     padding: 5% 12.5%;
-    margin-block: 5%;
+    margin-block: 7.5%;
   }
   #navrespond ul li a {
     text-decoration: none;
     color: white;
-    font-weight: 600;
     text-transform: uppercase;
     width: 100%;
     height: 100%;
@@ -578,11 +560,7 @@ footer {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 5px;
-  }
-  .icon i {
-    font-size: 20px;
-    color: white;
+    gap: 10px;
   }
   .intro .title {
     font-size: 27px;
@@ -651,7 +629,7 @@ footer {
   }
   footer {
     flex-direction: column;
-    gap: 10px;
+    gap: 3em;
     align-items: center;
     padding: 40px 5%;
     padding-bottom: 5em;
@@ -686,6 +664,5 @@ footer {
   footer {
     position: relative;
     bottom: 0;
-    height: 22.5vh;
   }
 }
